@@ -3,10 +3,10 @@ package rudaks.creational_pattern._02_factory._02_after;
 public class Client {
 
     public static void main(String[] args) {
-        Ship ship = new WhiteshipFactory().orderShip("whiteship", "rudaks94@gmail.com");
-        System.out.println(ship);
+        Ship whiteship = new WhiteshipFactory().orderShip("whiteship", "rudaks94@gmail.com");
+        System.out.println(whiteship);
 
-        /*Ship blackship = ShipFactory.orderShip("Blackship", "keesun@mail.com");
-        System.out.println(blackship);*/
+        Ship blackship = new BlackshipFactory().orderShip("Blackship", "keesun@mail.com");
+        System.out.println(blackship);
     }
 }

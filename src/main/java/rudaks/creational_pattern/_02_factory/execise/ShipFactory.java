@@ -1,4 +1,4 @@
-package rudaks.creational_pattern._02_factory._03_after;
+package rudaks.creational_pattern._02_factory.execise;
 
 public abstract class ShipFactory {
 
@@ -11,12 +11,12 @@ public abstract class ShipFactory {
     }
 
     private void sendEmail(String email) {
-        System.out.println("sending email: " + email);
+        System.out.println("메일 전송: " + email);
     }
 
     protected abstract Ship createShip();
 
     private void prepare(String name) {
-        System.out.println("preparing " + name);
+        System.out.println("준비중: " + name);
     }
 }
